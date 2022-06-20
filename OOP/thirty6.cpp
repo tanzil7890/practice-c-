@@ -4,6 +4,11 @@ using namespace std;
 //Not done.....ś
 //Virtual Function
 
+//Work case: IF we are making a pointer object of BaseCLASS and referencing the address of the DERIVED CLASS.
+//So while calling the function display it will show the display of BASECLASS instead the display of derivedClass.
+//Although if we are making display function of BASECLASS virtual then the display function of DERIVEDCLASS is executed.
+
+
 class BaseClass
 {
 public:
