@@ -9,17 +9,37 @@ vector<dataType> objectName;
  */
 
 template <class T>
-void display(vector<T> &v){
-    cout<<"Displaying the vector: "<<endl;
-    for (int  i = 0; i < v.size(); i++)
+void get(vector<T> &v){
+    int element;
+    cout<<"Enter the vector: "<<endl;
+    for (int  i = 0; i < 5; i++)
     {
-        cout<<v[i]<<" ";
-        //cout<<v.at(i)<<" ";
+        
+        cin>>element;
+        v.push_back(element);
     }
     cout<<endl;
     
 }
 
+template <class T>
+void display(vector<T> &v){
+    cout<<"Displaying the vector:"<<endl;
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+    
+}
+/* 
+template <class T>
+void insertNum(vector<T> &v){
+    vector<int>::iterator iter12;
+    v.insert(iter12+4, 9999);
+    //display(v);
+}
+ */
 int main() {
     vector<int> vec1;   //zero length vector.
     int element, size = 5;
@@ -73,7 +93,13 @@ int main() {
     //iter = vec4.begin();
     //vec4.insert(iter, 999);
     //cout<<"After inserting 999: "<<endl;
-    display(vec4);
+
+    vector<int> vec5;
+
+    get(vec5);
+    //insertNum(vec5);
+    display(vec5);
+    //display(get(vec5));
 
 
     return 0;
