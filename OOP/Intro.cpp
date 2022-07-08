@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-/* 
+
 class Point {
     private:
     int x;
@@ -37,7 +37,7 @@ int main() {
     return 0;    
 } 
 
- */
+
 
 /* 
 class Point2 {

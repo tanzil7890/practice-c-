@@ -19,7 +19,7 @@ public:
     void getId(void)
     {
         cout << "The id of this employee is " << id << endl;
-        cout << "The id of this employee is " << salary << endl;
+        cout << "The salary of this employee is " << salary << endl;
     }
 };
 
