@@ -53,8 +53,9 @@ void pairForSum(struct Array arr, int k){
     }
     
 }
+//This is 0(n^2)
 
-//Using Hashing (Faster Method)
+//Using Hashing (Faster Method) O(n)
 
 void pairForSumHash(struct Array arr,int low, int high, int k){
     int h = high +1;
