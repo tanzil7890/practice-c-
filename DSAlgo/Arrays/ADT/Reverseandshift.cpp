@@ -40,7 +40,7 @@ void left_shift(struct Array arr){
 int main()
 {
     struct Array arr = {{2, 30, 4, 5, 60}, 10, 5};
-    Reverse(arr);
+    //Reverse(arr);
     left_shift(arr);
     Display(arr);
     return 0;
